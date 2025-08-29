@@ -53,7 +53,8 @@ for (let cardBtn of cardBtns) {
         document.getElementById('coin-icon').innerText = carrintCion;
 
 
-
+        const now = new Date();
+        const formattedTime = now.toLocaleTimeString();
 
 
 
@@ -61,13 +62,17 @@ for (let cardBtn of cardBtns) {
 
         const addHistory = document.createElement('div')
         addHistory.innerHTML = `
-        <div id="card-contaner" class="bg-[#FAFAFA] w-[300px] h-[86px] p-5">
-                <h1>${cardTital2}</h1>
-                <p>${emergencyContact}</p>
-            </div>
-
+        <div id="card-contaner" class="bg-[#FAFAFA] w-[300px] h-[86px] p-5 flex justify-between items-center">
+                    <div>
+                        <h1>${cardTital2}</h1>
+                        <p>${emergencyContact}</p>
+                    </div>
+                    <p>${formattedTime}</p>
+                </div>
+          
         `
         cardContaner.append(addHistory)
+
 
 
 
