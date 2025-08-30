@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
+    <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/x-icon">
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- fond awesome cdn and dasyui  cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--  > -->
+
 </head>
 
 <body class="bg-[#f5fff6]">
     <header class="bg-white p-9">
-        <nav class="flex items-center sm:justify-between ">
+        <nav class="flex items-center justify-center sm:justify-between ">
             <div class="flex items-center gap-1.5">
                 <img src="./assets/logo.png" class="w-10" alt="">
                 <h3 class="text-[#0a5b28] font-extrabold">Emergency<br>Service</h3>
@@ -26,7 +27,8 @@
                     <span id="hard-btn">0</span>
                     <img src="./assets/heart.png" class="w-10" alt="">
                 </div>
-                <div class="flex items-center gap-2.5 bg-[#41ff6b1a]  w-[123px] h-[52px] justify-center rounded-3xl">
+                <div
+                    class="flex items-center sm:justify-center gap-2.5 bg-[#41ff6b1a]  w-[123px] h-[52px] justify-center rounded-3xl">
                     <span id="coin-icon">100</span>
                     <img src="./assets/coin.png" class="w-10" alt="">
                 </div>
@@ -49,8 +51,8 @@
         </div>
     </section>
     <section class=" sm:w-11/12 mx-auto grid sm:grid-cols-11 gap-2.5 mt-3.5">
-        <div id="card-id" class=" sm:col-span-8 ">
-            <div id="card-allbtn" class="card-paent grid grid-cols-3 ">
+        <div id="card-id" class=" sm:col-span-8">
+            <div id="card-allbtn" class="card-paent grid sm:grid-cols-3 ">
                 <div class="card  w-[300px] h-[300px] p-[32px] bg-white shadow-md rounded-2xl">
                     <div class="flex items-center justify-between"><img src="./assets/emergency.png" class="w-10"
                             alt="">
@@ -207,7 +209,7 @@
         </div>
         </div>
         <div class="bg-white w-full col-span-3">
-            <div class="flex justify-between items-center p-3">
+            <div class="flex sm:justify-between items-center p-3">
                 <h1 class="font-bold"> <i class="fa-solid fa-clock"></i> Call History </h1> <button id="clear"
                     class="w-[114px] h-[52px] bg-green-500 rounded-3xl">Clear</button>
             </div>

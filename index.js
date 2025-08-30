@@ -102,7 +102,7 @@ for (const copy of cops) {
         const EmergencyNumberCopy = copy.parentNode.parentElement.parentNode.childNodes[7].innerText
         navigator.clipboard.writeText(EmergencyNumberCopy)
             .then(() => {
-                alert('নম্বর কপি হয়ে গেছে ✅' + "" + EmergencyNumberCopy);
+                alert('নম্বর কপি হয়ে গেছে ✅' + " " + EmergencyNumberCopy);
             })
 
     })
