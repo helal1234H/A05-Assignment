@@ -86,4 +86,26 @@ getElement('clear').addEventListener("click", function () {
     clearDiv.innerText = " ";
 })
 
+//   copy btn function is state 
+
+
+const cops = document.getElementsByClassName('fa-copy')
+
+for (const copy of cops) {
+    copy.addEventListener('click', function () {
+        let copycount = 1;
+        const totalCopy = document.getElementById('copycount').innerText
+        let carrtentTotalCopy = copycount + Number(totalCopy);
+        document.getElementById('copycount').innerText = carrtentTotalCopy
+
+
+        const EmergencyNumberCopy = copy.parentNode.parentElement.parentNode.childNodes[7].innerText
+        navigator.clipboard.writeText(EmergencyNumberCopy)
+            .then(() => {
+                alert('নম্বর কপি হয়ে গেছে ✅' + "" + EmergencyNumberCopy);
+            })
+
+    })
+}
+
 
